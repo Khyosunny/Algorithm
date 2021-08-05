@@ -30,6 +30,3 @@ function solution(answers) {
 
   return answer;
 }
-
-const result = solution([1, 2, 3, 4, 5]);
-console.log("결과: ", result);
