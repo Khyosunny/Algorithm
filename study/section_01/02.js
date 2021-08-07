@@ -8,7 +8,7 @@ function solution(a, b, c) {
   else max = b;
   if (c > max) max = c;
 
-  if (total - max >= max) return answer;
+  if (total - max > max) return answer;
   else return (answer = "NO");
 }
 
