@@ -9,10 +9,22 @@ function solution(arr) {
 
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
+      let flag = 1;
       for (let k = 0; k < 4; k++) {
         let nx = i + dx[k];
         let ny = j + dy[k];
+        if (
+          nx >= 0 &&
+          ny >= 0 &&
+          nx < n &&
+          ny < n &&
+          arr[nx][ny] >= arr[i][j]
+        ) {
+          flag = 0;
+          break;
+        }
       }
+      if (flag) answer++;
     }
   }
 
