@@ -1,5 +1,21 @@
 // section 04 완전 탐색 >> 뒤집은 소수
 
+// 에라토스테네스 체
+// function isPrime(n) {
+//   let count = 0;
+//   let ch = Array.from({ length: n + 1 }, () => 0);
+//   for (let i = 2; i <= n; i++) {
+//     if (ch[i] === 0) {
+//       count++;
+//       for (let j = i; j <= n; j += i) {
+//         ch[j] = 1;
+//       }
+//     }
+//   }
+//   return count;
+// }
+// console.log(isPrime(4));
+
 function isPrime(num) {
   if (num <= 1) return false;
   for (let i = 2; i <= parseInt(Math.sqrt(num)); i++) {
