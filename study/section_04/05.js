@@ -1,4 +1,4 @@
-// section 04 완전 탐색 >> 졸업 선물
+// section 04 완전 탐색 >> K번째 수
 
 function solution(n, k, card) {
   let answer;
