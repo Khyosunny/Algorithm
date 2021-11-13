@@ -39,7 +39,6 @@ function solution3(participant, completion) {
   for (let i = 0; i < participant.length; i++) {
     hash.set(participant[i], (hash.get(participant[i]) || 0) + 1);
     hash.set(completion[i], (hash.get(completion[i]) || 0) - 1);
-    console.log(hash);
   }
 
   for (let [key, val] of hash) {
