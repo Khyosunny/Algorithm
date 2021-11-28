@@ -14,8 +14,8 @@ function solution(board, moves) {
           answer += 2;
         } else {
           stack.push(temp);
-          break;
         }
+        break;
       }
     }
   }
