@@ -17,6 +17,7 @@ function count(songs, capacity) {
 
 // songs 정렬하면 안됨, 연속된 곡을 넣어야하기 때문
 function solution(m, songs) {
+  let answer;
   let lt = Math.max(...songs);
   let rt = songs.reduce((sum, cur) => sum + cur, 0);
 
