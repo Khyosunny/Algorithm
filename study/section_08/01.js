@@ -1,4 +1,4 @@
-// section 08 재귀함수와 완전탐색(깊이우선탐색, DFS) >> 재귀함수
+// section 08 재귀함수와 완전탐색(깊이우선탐색, DFS) >> 재귀함수와 스택프레임
 
 function solution(n) {
   function DFS(number) {
